@@ -6,8 +6,9 @@ const UserItem: React.FC<{ person: Person }> = ({ person }) => {
   return (
     <IonItem>
       <IonLabel>
-        <h2>{person.name.firstname}</h2>
+        <h2>{person.name.firstname + " " + person.name.lastname}</h2>
         <p>{person.email}</p>
+        <p>{person.phone}</p>
       </IonLabel>
     </IonItem>
   );
